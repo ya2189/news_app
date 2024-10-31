@@ -1,12 +1,12 @@
 import logo from './logo.svg';
-import newspaper from './images/vecteezy_love-book-reading-watercolor-books-hand-painted_13181664.png';
-import "bootswatch/dist/cyborg/bootstrap.min.css";
+import newspaper from './vecteezy_love-book-reading-watercolor-books-hand-painted_13181664.png';
+import "bootswatch/dist/darkly/bootstrap.min.css";
 import './App.css';
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import NewsCard from './NewsCard'; 
+import NewsCollection from './components/NewsCollection'; 
 
 //React components are JavaScript functions that return markup (JSX)
 //Components MUST start with capital letter; HTML tags are lowercase
@@ -16,18 +16,9 @@ function App() {
       {/*p-padding, y-top and bottom, bg-light-background color*/}
       <div class="album py-5 bg-light">
         <div class="container">
-        <h3>Politics</h3>
-          <div class="row">
-              <NewsCard></NewsCard>
-              <NewsCard></NewsCard>
-              <NewsCard></NewsCard>
-          </div>
-          <h3>Technology</h3>
-          <div class="row">
-            <NewsCard></NewsCard>
-            <NewsCard></NewsCard>
-            <NewsCard></NewsCard>
-          </div>
+          <NewsCollection title="Politics"/>
+          <NewsCollection title="Technology"/>
+          <NewsCollection title="Global"/>
         </div>
       </div>
       <a href="https://www.vecteezy.com/free-png/news-icon">News Icon PNGs by Vecteezy</a>
